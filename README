@@ -1,0 +1,44 @@
+This project is a template to include user register and login using Google's API.
+
+The link below is a step by step guide to fulfilling this 
+https://developers.google.com/identity/sign-in/web/sign-in
+.
+
+Below is the process for:
+1. Google OAuth Setup
+Create a Google Cloud project:
+
+Go to the Google Cloud Console.
+Create a new project or use an existing one.
+Enable APIs:
+
+Go to API & Services > Library.
+Enable the Google Identity Services API.
+Set up credentials:
+
+Go to API & Services > Credentials.
+Create OAuth 2.0 Client ID:
+Application type: Web application.
+Authorized redirect URIs: Add your website's URL where users are redirected after login (e.g., https://yourwebsite.com/callback).
+Note down credentials:
+
+Save the Client ID and Client Secret for later use.
+
+2. Apple Sign-In Setup
+Register an App ID:
+
+Go to the Apple Developer Portal.
+Create an App ID under Identifiers > App IDs.
+Enable the "Sign in with Apple" service.
+Create a Service ID:
+
+Under Identifiers > Service IDs, create a new Service ID.
+Add your website's domain as a redirect URI (e.g., https://yourwebsite.com/apple-callback).
+Generate a Key:
+
+Go to Keys > Create a Key.
+Enable "Sign in with Apple" and download the .p8 private key file.
+Note the Key ID and Team ID.
+Set the redirect URI:
+
+Add your redirect URI to the Apple Developer Console.
